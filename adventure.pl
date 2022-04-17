@@ -338,7 +338,7 @@ opisz(gnom) :-
         write('przed każdym potencjalnym wybrańcem stoi test,'), nl,
         write('którego zawalenie wiąże się ze strasznymi konsekwencjami.'), nl,
         write('<gnom przystawia ci do czoła AK-47>'), nl,
-        write('Jakie zwierzę chodzi rano na 4 nogach(łapach),'), nl,
+        write('Jakie zwierzę chodzi rano na 4 nogach,'), nl,
         write('na 2 w ciągu dnia i na 3 wieczorem?'), nl,
         read(Odp),
                 Odp='człowiek', 

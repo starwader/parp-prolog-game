@@ -1,4 +1,9 @@
-/* <The name of this game>, by <your name idźes here>. */
+/* The quest of Bananine */
+/* PARP                         */
+/*      Jakub Budrewicz         */
+/*      Marcel Jarosz           */
+/*      Przemysław Rozwałka     */
+
 
 :- dynamic jestem_w/1, przedmiot_w/2, postać_w/2, trzymasz/1, zadania/1 .
 :- retractall(przedmiot_w(_, _)), retractall(jestem_w(_)), retractall(postać_w(_)), retractall(żywy(_)).
@@ -38,7 +43,7 @@ droga(dziedziniec_fortu, wschód, fort) :-
 droga(fort, zachód, dziedziniec_fortu).
 
 
-/*lokalizacje*/
+/* lokalizacje */
 
 postać_w(koko, polanka).
 postać_w(bobo, polanka).

@@ -35,9 +35,9 @@ droga(dziedziniec_fortu, zachód, rozwidlenie).
 
 droga(dziedziniec_fortu, wschód, fort) :- \+żywy(andrzej).
 droga(dziedziniec_fortu, wschód, fort) :- 
-        write('Andrzej łapie cię za rękę i mówi:.'), nl, nl,
-        write('"Nigdzie się nie wybierasz!'), nl,
-        write('Zmiataj stąd!"'), nl, nl,
+        write('Andrzej łapie cię za rękę i mówi: '), nl, nl,
+        write(' " Nigdzie się nie wybierasz!'), nl,
+        write('   Zmiataj stąd! "'), nl, nl,
         !, fail.
 
 droga(fort, zachód, dziedziniec_fortu).

@@ -240,7 +240,7 @@ opisz(jaskinia_próby) :-
         write('długą i głęboką jaskinię próby,'), nl,
         write('odwodniony,'), nl,
         write('głodny i zmęczony,'), nl,
-		write('docierasz do dziwnego,'), nl,
+	write('docierasz do dziwnego,'), nl,
         write('ciemnego i oślizgłego pomieszczenia,'), nl,
         write('całego pokrytego kurzem,'), nl,
         write('pajęczynami,'), nl,

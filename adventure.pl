@@ -1,5 +1,5 @@
 /* The quest of Bananine */
-/* PARP                         */
+/* PARP, zespół 21              */
 /*      Jakub Budrewicz         */
 /*      Marcel Jarosz           */
 /*      Przemysław Rozwałka     */
@@ -194,7 +194,7 @@ pomoc :-
         nl.
 
 
-/* This rule prints out pomoc and tells where you are. */
+/* Początek gry */
 
 start :-
         pomoc,
@@ -507,9 +507,9 @@ opisz(andrzej) :-
                 write('nie rusza się, ani nie odzywa...'), nl.
 
 opisz(pająk) :-
-        żywy(pająk),
+        żywy(pająk),(
                 write('ASSHSHSHHSHSHHHHH!!!'), nl, nl
-        ;
+        );
                 write('Pająk z jakiegoś zagadkowego powodu'), nl,
                 write('nie rusza się, ani nie odzywa...'), nl.
 
@@ -543,9 +543,9 @@ atakuj_impl(koko) :-
         śmierć.
 
 atakuj_impl(pająk) :-
-        \+żywy(pająk),
+        \+żywy(pająk),(
                 write('Pająk nie może być bardziej martwy.'), nl
-        ;
+        );
         zadania(odzyskaj_portfel),(
                 write('Rzucasz na pająka zaklęcie mistrza Uebe - Potassium.'), nl,
                 write('Pająk momentalnie kurczy się do rozmiaru naparstka, a ty go rozdeptujesz.'), nl,
@@ -560,9 +560,9 @@ atakuj_impl(pająk) :-
 
 
 atakuj_impl(andrzej) :-
-        \+żywy(andrzej),
+        \+żywy(andrzej),(
                 write('Andrzej nie może być bardziej martwy.'), nl
-        ;
+        );
         zadania(odzyskaj_portfel),
         trzymasz(excaliber),(
                 write('Zastrzeliłeś łotrzyka Andrzeja.'), nl,

@@ -213,7 +213,7 @@ opisz(rozwidlenie) :-
 
 opisz(dżungla) :- 
         write('Znajdujesz się w gęstej, ciemnej dżungli.'), nl,
-        write('Na północy znajduje się mała polanka która jest domem rodziny goryli.'), nl,
+        write('Na północy znajduje się mała polanka, która jest domem rodziny goryli.'), nl,
         nl.
 
 opisz(polanka) :- 
@@ -239,7 +239,8 @@ opisz(jaskinia_próby) :-
         write('Po wielogodzinnej i ciężkiej tułaczce przez'), nl,
         write('długą i głęboką jaskinię próby,'), nl,
         write('odwodniony,'), nl,
-        write('głodny i zmęczony docierasz do dziwnego,'), nl,
+        write('głodny i zmęczony,'), nl,
+		write('docierasz do dziwnego,'), nl,
         write('ciemnego i oślizgłego pomieszczenia,'), nl,
         write('całego pokrytego kurzem,'), nl,
         write('pajęczynami,'), nl,
@@ -290,7 +291,7 @@ opisz(fort) :-
         write('Kłusownicy otwierają ogień,'), nl,
         write('ty jednak skutecznie unikasz wszystkich ich strzałów,'), nl,
         write('w międzyczasie strzelając ze swojego pięknego Excalibra.'), nl,
-        write('W mgnieniu oka wszystkich dziesięciu kłusowników pada na ziemię'), nl,
+        write('W mgnieniu oka wszystkich dziesięciu kłusowników pada na ziemię,'), nl,
         write('a ty nabierasz jeszcze większej ochoty na banany z dżungli.'), nl, nl,
         write('Na zachodzie znajduje się wyjście.'), nl.
         
@@ -307,9 +308,9 @@ opisz(kamieniołom) :-
         assert(przedmiot_w(excaliber, kamieniołom)),
         write('W kamieniołomie zdaje się, że nic nie ma,'), nl,
         write('ale w głębi odnalazłeś ornamentną złotą skrzynię.'), nl,
-        write('Postanawiasz sprawdzić na niej swoje,'), nl,
-        write('umiejętności Tiu-Fiu.'), nl,
-        write('Skrzynia otwiera się, i ujawnia się piękny pistolet "Excaliber".'), nl,
+        write('Postanawiasz sprawdzić na niej swoje umiejętności Tiu-Fiu.'), nl,
+        write('Skrzynia otwiera się,'), nl,
+		write('ujawniając piękny pistolet "Excaliber"'), nl,
         write('Na południu znajduje się wyjście.'), nl, nl.
 
 opisz(kamieniołom) :-
@@ -339,14 +340,14 @@ opisz(gnom) :-
         write('Bananine - tak go zwać lud nasz prosty będzie,'), nl,
         write('Jego osiągnięcia znane będą światu wszędzie.'), nl,
         nl,
-        write('Taka przepowiednia widnieje na starożytnych freskach w moim domu Ghfjg,'), nl,
-        write('w górze Hasdkh.'), nl, nl,
+        write('Taka przepowiednia widnieje na starożytnych freskach,'), nl,
+        write('w moim domu Ghfjg, w górze Hasdkh.'), nl, nl,
         write('Ale niestety,'), nl,
         write('przed każdym potencjalnym wybrańcem stoi test,'), nl,
         write('którego zawalenie wiąże się ze strasznymi konsekwencjami.'), nl,
         write('<gnom przystawia ci do czoła karabin AK-47>'), nl, nl,
-        write('Jakie zwierzę chodzi rano na 4 nogach,'), nl,
-        write('na 2 w ciągu dnia i na 3 wieczorem?'), nl,
+        write('Jakie zwierzę chodzi rano na czterech nogach,'), nl,
+        write('na dwóch w ciągu dnia i na trzech wieczorem?'), nl,
         read(Odp),
         (Odp='człowiek'; Odp='czlowiek'), (
                 write('<Zaskoczony gnom odstawia AK-47 na bok>'), nl,
@@ -385,13 +386,13 @@ opisz(koko) :-
                 write('Źli kłusownicy polują na nas i robią z naszych skór dywany! '), nl,
                 write('Jeśli tak dalej pójdzie, to wszyscy zginiemy!'), nl, nl,
                 write('Czy możesz nam pomóc?'), nl,
-                write('Na pewno zostaniesz sowicie nagrodzony bananami, jeśli ci się uda'), nl,
+                write('Jeżeli ci się uda, na pewno zostaniesz sowicie nagrodzony bananami'), nl,
                 write('\ttak./nie.'), nl,
                 read(Odp),
                 Odp='tak', (
                         write('Och, dziękuję!'), nl,
                         write('Powiadomię Uebe, mistrza starożytnych sztuk walki Tiu-Fiu'), nl,
-                        write('o twojej dobroduszności, a na pewno ci pomoże!'), nl,
+                        write('o twojej dobroduszności, a na pewno cię wesprze!'), nl,
                         write('Poszukaj go na zachodzie.'), nl,
                         assert(zadania(porozmawiaj_z_uebe_od_koko)), nl,
                         write('<dostałeś zadanie od Koko>'), nl

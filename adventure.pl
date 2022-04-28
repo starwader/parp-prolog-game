@@ -310,7 +310,7 @@ opisz(kamieniołom) :-
         write('ale w głębi odnalazłeś ornamentną złotą skrzynię.'), nl,
         write('Postanawiasz sprawdzić na niej swoje umiejętności Tiu-Fiu.'), nl,
         write('Skrzynia otwiera się,'), nl,
-		write('ujawniając piękny pistolet "Excaliber"'), nl,
+	write('ujawniając piękny pistolet "Excaliber"'), nl,
         write('Na południu znajduje się wyjście.'), nl, nl.
 
 opisz(kamieniołom) :-
@@ -473,7 +473,7 @@ opisz(uebe) :-
         \+zadania(zabiłeś_kłusowników),(
                 write('Czy odnalazłeś już mój stary pistolet Luger Parabellum - Excaliber?'), nl,
                 write('On pozwoli ci pokonać złych zbrodniarzy.'), nl,
-                write('...Powodzenia przyjacielu.'), nl
+                write('Bywaj!'), nl
         );
                 write('Oto nasz wybawca Bananine!!'), nl,
                 write('A oto twoja nagroda: dożywotni zapas bananów;'), nl,
@@ -537,7 +537,7 @@ atakuj_impl(bobo) :-
 
 
 atakuj_impl(koko) :-
-        write('Koko patrzy na ciebie zazkoczony,'), nl,
+        write('Koko patrzy na ciebie zaskoczony,'), nl,
         write('jednym szybkim ruchem wyrywa ci wszystkie kończyny.'), nl, nl,
         write('<umierasz>'), nl, nl,
         śmierć.
